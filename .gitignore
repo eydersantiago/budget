@@ -1,0 +1,56 @@
+# Entornos virtuales / dependencias locales
+.venv/
+venv/
+env/
+pip-wheel-metadata/
+.Python
+
+# Python: binarios y cachés
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyi
+*.so
+*.pyz
+site/
+.ipynb_checkpoints/
+
+# Build / distribución
+build/
+dist/
+.eggs/
+*.egg-info/
+
+# Tests y herramientas
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.mypy_cache/
+.ruff_cache/
+.pyre/
+
+# Django
+# db.sqlite3
+local_settings.py
+media/
+staticfiles/
+# si usas otra carpeta de collectstatic, ignórala aquí:
+# static_collected/
+
+# Variables de entorno y secretos
+.env
+.env.*
+*.env
+
+# IDE / editor
+.vscode/
+.idea/
+*.code-workspace
+
+# SO
+.DS_Store
+Thumbs.db
