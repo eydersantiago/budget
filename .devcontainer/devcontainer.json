@@ -1,0 +1,24 @@
+{
+  "name": "ADACEEN Devcontainer",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "adaceen.adaceen",
+        "ms-python.python",
+        "ms-vscode.cpptools",
+        "eamodio.gitlens"
+      ],
+      "settings": {
+        "editor.formatOnSave": true,
+        "files.trimTrailingWhitespace": true
+      }
+    }
+  },
+  "extensions": [
+    "adaceen.adaceen"
+  ],
+  "postCreateCommand": "bash .devcontainer/install-extensions.sh || true",
+  "postAttachCommand": "bash .devcontainer/install-extensions.sh || true",
+  "updateContentCommand": "bash .devcontainer/install-extensions.sh || true"
+}
